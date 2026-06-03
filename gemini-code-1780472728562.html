@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spring Onion - Bhandarkar Road | Fine Oriental Cuisine</title>
+    <style>
+        :root {
+            --primary-color: #2d5a27;
+            --accent-color: #d97706;
+            --text-dark: #1f2937;
+            --bg-light: #fafafa;
+            --card-bg: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--bg-light);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 3rem 1rem;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            margin: 0.5rem 0 0 0;
+            font-style: italic;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .notice-banner {
+            background-color: #f0fdf4;
+            border-left: 4px solid var(--primary-color);
+            padding: 1rem;
+            margin-bottom: 2rem;
+            border-radius: 4px;
+            font-size: 0.95rem;
+        }
+
+        .menu-section {
+            margin-bottom: 3rem;
+        }
+
+        .section-title {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+            font-size: 1.75rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .menu-item {
+            background: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border: 1px solid #e5e7eb;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 0.5rem;
+        }
+
+        .item-name {
+            font-weight: 600;
+            font-size: 1.15rem;
+            margin: 0;
+            padding-right: 1rem;
+        }
+
+        .item-price {
+            color: var(--accent-color);
+            font-weight: 700;
+            white-space: nowrap;
+        }
+
+        .item-desc {
+            font-size: 0.9rem;
+            color: #6b7280;
+            margin: 0;
+        }
+
+        .badge {
+            display: inline-block;
+            font-size: 0.75rem;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-top: 0.75rem;
+            align-self: flex-start;
+        }
+
+        .badge-veg { background-color: #dcfce7; color: #15803d; }
+        .badge-nonveg { background-color: #fee2e2; color: #b91c1c; }
+
+        footer {
+            background-color: #1f2937;
+            color: #9ca3af;
+            text-align: center;
+            padding: 2rem 1rem;
+            margin-top: 4rem;
+            font-size: 0.9rem;
+        }
+
+        footer p { margin: 0.5rem 0; }
+        footer a { color: white; text-decoration: none; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>SPRING ONION</h1>
+        <p>Authentic Chinese & Thai Oriental Cuisine</p>
+    </header>
+
+    <div class="container">
+        <div class="notice-banner">
+            <strong>Our Culinary Philosophy:</strong> We proudly prepare our delicacies fresh from scratch. Our dishes contain absolutely no added Ajinomoto, chemical preservatives, or artificial food colorings.
+        </div>
+
+        <!-- Soups Section -->
+        <div class="menu-section">
+            <h2 class="section-title">Soups & Refreshers</h2>
+            <div class="grid">
+                <div class="menu-item">
+                    <div class="item-header">
+                        <h3 class="item-name">Veg Lemon Coriander Soup</h3>
+                        <span class="item-price">₹336</span>
+                    </div>
+                    <p class="item-desc">Simple yet immensely refreshing soup infused with fresh coriander leaves and tangy lemon zest.</p>
+                    <span class="badge badge-veg">Veg</span>
+                </div>
+                <div class="menu-item">
+                    <div class="item-header">
+                        <h3 class="item-name">Chicken Hot & Sour Soup</h3>
+                        <span class="item-price">₹362</span>
+                    </div>
+                    <p class="item-desc">A traditional Chinese soup balancing subtle spice with sharp, tangy notes.</p>
+                    <span class="badge badge-nonveg">Non-Veg</span>
+                </div>
+                <div class="menu-item">
+                    <div class="item-header">
+                        <h3 class="item-name">Authentic Thukpa</h3>
+                        <span class="item-price">₹300</span>
+                    </div>
+                    <p class="item-desc">A deeply comforting, traditional Tibetan-style soupy noodle delight packed with aromatics.</p>
+                    <span class="badge badge-veg">Available Veg / Non-Veg</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Starters Section -->
+        <div class="menu-section">
+            <h2 class="section-title">Signature Starters</h2>
+            <div class="grid">
+                <div class="menu-item">
+                    <div class="item-header">
+                        <h3 class="item-name">Dynamite Prawns</h3>
+                        <span class="item-price">₹450</span>
+                    </div>
+                    <p class="item-desc">Crispy, golden-fried prawns coated comprehensively in a rich, spicy, and creamy signature sauce.</p>
+                    <span class="badge badge-nonveg">Non-Veg</span>
+                </div>
+                <div class="menu-item">
+                    <div class="item-header">
+                        <h3 class="item-name">Grill Tokyo Chicken</h3>
+                        <span class="item-price">₹420</span>
+                    </div>
+                    <p class="item-desc">Succulent grilled chicken pieces expertly tossed in a sophisticated Kasundi mustard and savory peanut sauce.</p>
+                    <span class="badge badge-nonveg">Non-Veg</span>
+                </div>
+                <div class="menu-item">
+                    <div class="item-header">
+                        <h3 class="item-name">Chicken & Prawns Wrap</h3>
+                        <span class="item-price">₹450</span>
+                    </div>
+                    <p class="item-desc">Premium prawns intricately wrapped in tender shredded chicken, delicately infused with light soya and exotic oriental spices.</p>
+                    <span class="badge badge-nonveg">Non-Veg</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mains Section -->
+        <div class="menu-section">
+            <h2 class="section-title">Mains, Rice & Noodles</h2>
+            <div class="grid">
+                <div class="menu-item">
+                    <div class="item-header">
+                        <h3 class="item-name">Chicken Burnt Garlic Rice</h3>
+                        <span class="item-price">₹544</span>
+                    </div>
+                    <p class="item-desc">Classic stir-fried jasmine rice heavily infused with the deep, aromatic flavors of golden-fried burnt garlic.</p>
+                    <span class="badge badge-nonveg">Non-Veg</span>
+                </div>
+                <div class="menu-item">
+                    <div class="item-header">
+                        <h3 class="item-name">Authentic Pad Thai Noodles</h3>
+                        <span class="item-price">₹410</span>
+                    </div>
+                    <p class="item-desc">Traditional flat rice noodles stir-fried with tofu, bean sprouts, and standard Thai spices, finished with crushed peanuts.</p>
+                    <span class="badge badge-veg">Available Veg / Non-Veg</span>
+                </div>
+                <div class="menu-item">
+                    <div class="item-header">
+                        <h3 class="item-name">Fish in Hot Garlic Sauce</h3>
+                        <span class="item-price">₹505</span>
+                    </div>
+                    <p class="item-desc">Tender fillets of Basa fish simmered gently in a tantalizing, medium-spicy gravy composed of fresh garlic and red chillies.</p>
+                    <span class="badge badge-nonveg">Non-Veg</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p><strong>Spring Onion</strong> | Shop No-4B, Ground Floor, Millennium Tower, Bhandarkar Rd, Deccan Gymkhana, Pune, Maharashtra 411004</p>
+        <p>Contact and Reservations: +91 97677 22444 | Operational Hours: 11:30 AM - 3:30 PM, 6:30 PM - 11:30 PM</p>
+    </footer>
+
+</body>
+</html>
